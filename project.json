@@ -1,0 +1,12 @@
+{
+  "name": "hello-lambda-nem",
+  "description": "",
+  "memory": 128,
+  "timeout": 5,
+  "role": "arn:aws:iam::233534973562:role/hello-lambda-nem_lambda_function",
+  "environment": {},
+  "hooks": {
+    "build": "cp -f ../../tsconfig.json ./ && tsc -p ./ && cp -f ./package.json ./dist && npm install --only=production --prefix ./dist",
+    "clean": "rm -fr dist"
+  }
+}

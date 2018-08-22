@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es2015",
+        "noImplicitAny": true,
+        "noImplicitReturns": true,
+        "noFallthroughCasesInSwitch": true,
+        "outDir": "./dist",
+        "allowJs": true,
+        "lib": [
+            "es5",
+            "es2015.promise",
+            "dom"
+        ]
+    },
+    "include": [
+        "./src/**/*"
+    ]
+}

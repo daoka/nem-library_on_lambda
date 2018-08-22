@@ -1,0 +1,11 @@
+{
+    "description": "send xem by nem library",
+    "runtime": "nodejs8.10",
+    "handler": "dist/index.handler",
+    "memory": 128,
+    "timeout": 5,
+    "environment": {
+      "PRIVATE_KEY": "YOUR_PRIVATE_KEY",
+      "TO_ADDRESS": "DESTINATION_ADDRESS"
+    }
+  }
